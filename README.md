@@ -1,4 +1,4 @@
-# Teste de WR
+# Teste de RW
 
 ```bash
 $ git clone https://github.com/marcus-campos/python-vs-mongodb-rw
