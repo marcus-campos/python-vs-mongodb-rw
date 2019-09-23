@@ -7,6 +7,10 @@ services:
     ports:
       - 27017:27017
     restart: always
+    links: 
+      - mongo1
+      - mongo2
+      - mongo3
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0" ]
   mongo1:
     hostname: mongo1
