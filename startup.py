@@ -41,6 +41,7 @@ def searchReviews():
         result = db.reviews.find({"$text": {"$search": company_cuisine[randint(0, (len(company_cuisine)-1))]}}).limit(10)
         print('Search {0} of {1} - {2}'.format(x, MAX_SEARCH, result))
     #Step 7: Tell us that you are done
+    print('Search {0} business reviews'.format(MAX_SEARCH))
 
 if __name__ == "__main__":
     s = time.perf_counter()
